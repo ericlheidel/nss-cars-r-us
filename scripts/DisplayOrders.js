@@ -15,5 +15,5 @@ export const DisplayOrders = async () => {
         }
     )
 
-    return ordersHTML.join("\n")
+    return ordersHTML.join("")
 }

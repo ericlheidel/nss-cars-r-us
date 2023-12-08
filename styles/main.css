@@ -1,0 +1,40 @@
+html {
+    margin: 0 auto;
+    background-color: beige;
+}
+
+.options__article__top,
+.options__article__bottom {
+    display: flex;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+.options {
+    border: 2px dotted blue;
+    border-radius: 15px;
+    width: 250px;
+    margin: 0 auto 50px auto;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+}
+
+.order {
+    border: 2px dotted blue;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: blanchedalmond;
+    margin: 0 auto 25px auto;
+}
+
+.options__label {
+    margin-left: 25px;
+}
+
+select {
+    margin-left: 25px;
+    margin-bottom: 25px;
+}

@@ -7,7 +7,7 @@ export const DisplayOrders = async () => {
             const orderPrice = order.paints.price + order.interiors.price + order.wheels.price + order.technologies.price
             return`
                 <section class="orders__section">
-                    <div class="order">Order #${order.id}: ${order.paints.color} car with ${order.wheels.type} wheels, ${order.interiors.type}, and the ${order.technologies.type} for a total cost of <b>$${orderPrice.toLocaleString("en-US", {
+                    <div class="order">Order #${order.id}: ${order.paints.color} car with ${order.wheels.type} wheels, ${order.interiors.type}, and the ${order.technologies.type} for a total cost of <b>${orderPrice.toLocaleString("en-US", {
                         style: "currency",
                         currency: "USD"
                     })}</b>.

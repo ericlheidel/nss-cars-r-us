@@ -16,6 +16,10 @@ const container = document.querySelector("#container")
 
 const render = async () => {
 
+    // These EventListeners are listening for a change, when there is a change -->
+    // The function will be called --> 
+    // The function called will push the id of the target into an integer -->
+    // and pass it through to the function that will set the Transient Data State
     document.addEventListener("change", handlePaintTypeChange)
     document.addEventListener("change", handleInteriorsTypeChange)
     document.addEventListener("change", handleTechnologiesTypeChange)

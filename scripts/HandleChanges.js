@@ -1,7 +1,9 @@
 import { setInteriorsType, setPaintsType, setTechnologiesType, setWheelsType } from "./TransientState.js"
 
 
-// These functionss WILL BE EXECUTED when the user changes which menu item  is selected
+// These functions WILL BE EXECUTED when the user changes which menu item  is selected
+// these functions will pass the id (integer) of the change target to the functions -->
+// that modify the Transient State Data
 export const handlePaintTypeChange = (changeEvent) => {
     if (changeEvent.target.id === "paints") {
         const convertedToInteger = parseInt(changeEvent.target.value)

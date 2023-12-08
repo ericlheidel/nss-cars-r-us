@@ -8,6 +8,8 @@ const TransientState = {
 
 
 // Functions to modify each property of transient state
+// When the change happens, these functions are the ones that accept the id (integer) -->
+// and pass it to the Transient State Data
 export const setPaintsType = (chosenPaintsType) => {
     TransientState.paintsId = chosenPaintsType
     console.log(TransientState)

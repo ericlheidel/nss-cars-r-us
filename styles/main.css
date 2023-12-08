@@ -19,6 +19,7 @@ button {
     margin: 0 auto 50px auto;
     justify-content: space-around;
     background-color: blanchedalmond;
+    box-shadow: gray 5px 5px 10px;
 }
 
 .order {
@@ -28,6 +29,7 @@ button {
     padding: 10px;
     background-color: blanchedalmond;
     margin: 0 auto 25px auto;
+    box-shadow: gray 5px 5px 10px;
 }
 
 .options__label {

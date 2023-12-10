@@ -91,69 +91,71 @@
       "price": 4800
     }
   ],
+  "types": [
+    {
+      "id": 1,
+      "type": "Car",
+      "multiplier": 1
+    },
+    {
+      "id": 2,
+      "type": "SUV",
+      "multiplier": 1.5
+    },
+    {
+      "id": 3,
+      "type": "Truck",
+      "multiplier": 2.25
+    }
+  ],
   "orders": [
     {
-      "paintsId": 3,
-      "interiorsId": 1,
-      "technologiesId": 2,
-      "wheelsId": 2,
-      "id": 1
-    },
-    {
       "paintsId": 1,
-      "interiorsId": 3,
-      "technologiesId": 2,
-      "wheelsId": 2,
-      "id": 2
-    },
-    {
-      "paintsId": 2,
-      "interiorsId": 4,
-      "technologiesId": 2,
-      "wheelsId": 2,
-      "id": 3
+      "interiorsId": 1,
+      "technologiesId": 1,
+      "wheelsId": 1,
+      "typesId": 1,
+      "id": 1
     },
     {
       "paintsId": 1,
       "interiorsId": 1,
       "technologiesId": 1,
       "wheelsId": 1,
-      "id": 4
+      "typesId": 2,
+      "id": 2
     },
     {
       "paintsId": 1,
+      "interiorsId": 1,
+      "technologiesId": 1,
+      "wheelsId": 1,
+      "typesId": 3,
+      "id": 3
+    },
+    {
+      "paintsId": 4,
       "interiorsId": 4,
       "technologiesId": 4,
-      "wheelsId": 1,
+      "wheelsId": 4,
+      "typesId": 1,
+      "id": 4
+    },
+    {
+      "paintsId": 4,
+      "interiorsId": 4,
+      "technologiesId": 4,
+      "wheelsId": 4,
+      "typesId": 2,
       "id": 5
     },
     {
       "paintsId": 4,
       "interiorsId": 4,
-      "technologiesId": 2,
-      "wheelsId": 1,
-      "id": 6
-    },
-    {
-      "paintsId": 1,
-      "interiorsId": 4,
-      "technologiesId": 2,
-      "wheelsId": 2,
-      "id": 7
-    },
-    {
-      "paintsId": 3,
-      "interiorsId": 3,
-      "technologiesId": 3,
-      "wheelsId": 3,
-      "id": 8
-    },
-    {
-      "paintsId": 1,
-      "interiorsId": 2,
       "technologiesId": 4,
-      "wheelsId": 3,
-      "id": 9
+      "wheelsId": 4,
+      "typesId": 3,
+      "id": 6
     }
   ]
 }

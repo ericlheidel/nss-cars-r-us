@@ -6,6 +6,8 @@ html {
 .options__article__top,
 .options__article__bottom {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 button {

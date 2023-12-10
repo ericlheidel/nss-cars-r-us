@@ -4,6 +4,7 @@ const TransientState = {
     "interiorsId": 0,
     "technologiesId": 0,
     "wheelsId": 0,
+    "typesId": 0,
 }
 
 
@@ -30,6 +31,11 @@ export const setWheelsType = (chosenWheelsType) => {
     console.log(TransientState)
 }
 
+export const setVehiclesType = (chosenVehicleType) => {
+    TransientState.typesId = chosenVehicleType
+    console.log(TransientState)
+}
+
 
 // Function to convert transient state to permanent state
 export const SaveChanges = async () => {
@@ -47,6 +53,7 @@ export const SaveChanges = async () => {
     TransientState.interiorsId = 0
     TransientState.technologiesId = 0
     TransientState.wheelsId = 0
+    TransientState.typesId = 0
 
     const customEvent = new CustomEvent("newOrderCreated")
     document.dispatchEvent(customEvent)

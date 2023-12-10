@@ -1,4 +1,4 @@
-import { setInteriorsType, setPaintsType, setTechnologiesType, setWheelsType } from "./TransientState.js"
+import { setInteriorsType, setPaintsType, setTechnologiesType, setVehiclesType, setWheelsType } from "./TransientState.js"
 
 
 // These functions WILL BE EXECUTED when the user changes which menu item  is selected
@@ -29,5 +29,12 @@ export const handleWheelsTypeChange = (changeEvent) => {
     if (changeEvent.target.id === "wheels") {
         const convertedToInteger = parseInt(changeEvent.target.value)
         setWheelsType(convertedToInteger)
+    }
+}
+
+export const handleVehiclesTypeChange = (changeEvent) => {
+    if (changeEvent.target.id === "types") {
+        const convertedToInteger = parseInt(changeEvent.target.value)
+        setVehiclesType(convertedToInteger)
     }
 }

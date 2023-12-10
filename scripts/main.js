@@ -3,12 +3,14 @@ import {
     handleInteriorsTypeChange,
     handlePaintTypeChange,
     handleTechnologiesTypeChange,
+    handleVehiclesTypeChange,
     handleWheelsTypeChange
             } from "./HandleChanges.js"
 import { InteriorsOptions } from "./InteriorsOptions.js"
 import { PaintsOptions } from "./PaintsOptions.js"
 import { OrderButton } from "./PlaceOrder.js"
 import { TechologiesOptions } from "./TechnologiesOptions.js"
+import { TypesOptions } from "./TypeOptions.js"
 import { WheelsOptions } from "./WheelsOptions.js"
 
 const container = document.querySelector("#container")
@@ -24,11 +26,13 @@ const render = async () => {
     document.addEventListener("change", handleInteriorsTypeChange)
     document.addEventListener("change", handleTechnologiesTypeChange)
     document.addEventListener("change", handleWheelsTypeChange)
+    document.addEventListener("change", handleVehiclesTypeChange)
 
     const paintsHTML = await PaintsOptions()
     const interiorsHTML = await InteriorsOptions()
     const wheelsHTML = await WheelsOptions()
     const technologiesHTML = await TechologiesOptions()
+    const typesHTML = await TypesOptions()
     const orderButtonHTML = OrderButton()
     const displayOrdersHTML = await DisplayOrders()
 
@@ -52,6 +56,13 @@ const render = async () => {
                 <h2 class="options__label">Technologies</h2>
                 ${technologiesHTML}
             </section>
+            <section class="types__section options">
+                <h2 class="options__label">Vehicle Type</h2>
+                ${typesHTML}
+            </section>
+        </article>
+        <article class="types__article>
+            
         </article>
         <article class="order__btn__article">
             <section class="order__btn__section">
